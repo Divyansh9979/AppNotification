@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification">
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Toast Notification"
+        android:textSize="16sp"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Notification"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/btn_toast"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog Notification"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_toast"
+        android:padding="16dp"/>
+
+</RelativeLayout>
