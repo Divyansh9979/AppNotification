@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btn_recylcer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, MainRecycler.class);
+                startActivity(intent);
             }
         });
     }
